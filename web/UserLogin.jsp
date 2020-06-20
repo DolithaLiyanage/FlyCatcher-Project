@@ -1,6 +1,6 @@
 <jsp:include page="NavBar.jsp"></jsp:include>
 
-
+<div class = "container center" style = "width:30%;margin-top:3%">
     <div class="card" style = "height: 500px;width:400px; overflow: hidden; ">
         <div class = "container center"style=" width: 80%">
     <h3>User Login</h3>

@@ -8,10 +8,20 @@
         background-image: url(16.jpg);
         background-size:cover;
         box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 7px 7px 7px 7px;
     }
     .validate{
         color: black;
     }
+    h3{
+        padding: 1%;
+        display: inline-block;
+        background-color: #ff5e6c;
+        padding: 3%;
+        border-radius: 7px 7px 7px 7px;
+    box-shadow: 3px 5px 5px  rgba(1, 0, 0, 0.5);
+  
+}
 </style>
 <div class = "container center" style = "width:30%;margin-top:3%">
     <div class="card" style = "height: 500px;width:400px; overflow: hidden; ">

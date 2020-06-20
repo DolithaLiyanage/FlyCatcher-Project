@@ -4,6 +4,30 @@
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.PreparedStatement"%>
 <%@page import="java.sql.Connection"%>
+<style>
+    body{
+        background-image: url(33.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    tbody{
+        background: rgba(0, 0, 0, 0.05);
+        font-weight: bold;
+        text-align: center;
+        
+        
+    }
+    td{
+        text-align: center;
+    }
+    thead{
+        color: white;
+        background: rgba(0, 0, 0, 0.7);
+            
+    }
+    
+</style>
 <%
 
     try {
@@ -18,7 +42,7 @@
 
 
 
-<div  style="padding:2% 10% ">
+<div  style="padding:5% 10% 2% 10% ">
     <table>
         <thead>
             <tr>
@@ -67,6 +91,6 @@
 
     }
 %>
-<div class="right container" style="padding-top: 2%; padding-left: 50%; margin-bottom: 1%;">
+<div class="right container" style=" padding-left: 50%; margin-bottom: 1%;">
     <a href="FlightInput.jsp" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
 </div>

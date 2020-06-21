@@ -22,20 +22,40 @@
 
 %>
 
-<div class = "container center" style = "width:30%">
-    <h3>Add aircraft details here</h3>
+<style>
+    body{
+        background-image: url(34.jpg);
+
+        background-position: left;
+        background-size: cover;
+    }
+    
+    input{
+        text-align: center;
+    }
+    .card{
+        border:5px double black;
+        box-shadow: 5px 5px 5px  rgba(1, 0, 0, 0.35);
+        
+        
+    }
+</style>
+<div class = "container center" style = "width:20%;margin-top:1%">
+    <div class="card" style = "height: 450px; overflow: hidden; padding: 0 8% 0 8%">
+
+    <h4 style="margin-bottom: 5%">Edit Aircraft</h4>
     
     
     <form method="POST" action="">
         <% while(rs.next()){ %>
         
         <div class="input-feild">
-            <i class="material-icons prefix">person</i>
+            <p>Registration No.</p>
             <input  value= "<%=rs.getString("reg_no")%>" name="reg_no" type="text" class="validate"/> 
 
         </div><br>
         <div class="input-feild" >
-            <i class="material-icons prefix">mail</i>
+                        <p>Seat Count</p>
             <input  name="seat_count" value= "<%=rs.getString("seat_count")%>" type="text" class="validate">                         
         </div><br>
         <%}%>
@@ -45,7 +65,7 @@
         </button>
     </form>
 </div>
-        
+        </div>
 <%
         if(reg_no!=null && seat_count!=null){
             String query = "update AIRCRAFT set seat_count= ? where reg_no= ?";

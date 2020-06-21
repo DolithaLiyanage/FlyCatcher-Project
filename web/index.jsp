@@ -6,33 +6,34 @@
 <div class="slider" >
     <ul class="slides" >
         <li>
-            <img src="1.jpg"> <!-- random image -->
-            <div class="caption center-align">
-                <h3>This is our big Tagline!</h3>
-                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-            </div>
-        </li>
-        <li>
-            <img src="4.jpg"> <!-- random image -->
+            <img src="38.jpg"> <!-- random image -->
             <div class="caption left-align">
-                <h3>Left Aligned Caption</h3>
-                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                <h3 style="color:black">Why waste time in queues</h3>
+                 <h5 style="color:black;">To buy tickets?</h5>
+
             </div>
         </li>
         <li>
-            <img style="padding-top:35%" src="6.jpg"> <!-- random image -->
+            <img src="39.jpg" style="padding-top:38%"> <!-- random image -->
             <div class="caption right-align">
-                <h3>Right Aligned Caption</h3>
-                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                <h3 style="color:black">When you can book tickets</h3>
+                <h5 style="color:black">with just a few clicks</h5>
+            </div>
+        </li>
+        <li>
+            <img style="padding-top:32%" src="36.jpg"> <!-- random image -->
+            <div class="caption left-align">
+                <h3>You will be there</h3>
+                <h5 class="light grey-text text-lighten-3">Before you know it</h5>
             </div>
         </li>
         <li style="background-color: #e57373">
-            <img src="Airport queue.jpg"> <!-- random image -->
+             <!-- random image -->
             <div class="caption center-align">
                 <h1>FlyCatcher</h1>
                 <h5 class="light grey-text text-lighten-3">Catch your flight at home</h5>
                 <div class="col s6">
-                    <a href="UserLogin.jsp" class="waves-effect -light btn">Book you flight now</a>
+                    <a href="UserLogin.jsp" class="waves-effect -light btn">Book your flight now</a>
                 </div>
             </div>
         </li>

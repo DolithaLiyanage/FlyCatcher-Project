@@ -1,20 +1,42 @@
 <jsp:include page="NavBar.jsp"></jsp:include>
-<div class = "container center" style = "width:30%">
-    <h3>Add aircraft details here</h3>
+
+<style>
+    body{
+        background-image: url(34.jpg);
+
+        background-position: left;
+        background-size: cover;
+    }
+    
+    input{
+        text-align: center;
+    }
+    .card{
+        border:5px double black;
+        box-shadow: 5px 5px 5px  rgba(1, 0, 0, 0.35);
+        
+        
+    }
+</style>
+<div class = "container center" style = "width:20%;margin-top:1%">
+    <div class="card" style = "height: 450px; overflow: hidden; padding: 0 8% 0 8%">
+
+    <h4 style="margin-bottom: 5%">Add Aircraft</h4>
     
     <form method="POST" action="AircraftServlet">
         <div class="input-feild">
-            <i class="material-icons prefix">person</i>
-            <input placeholder="Registration No." name="reg_no" type="text" class="validate"> 
+            <p style="padding-top: 4%">Registration No.</p>
+            <input placeholder="Ex-10001" name="reg_no" type="text" class="validate"> 
 
         </div><br>
         <div class="input-feild" >
-            <i class="material-icons prefix">mail</i>
-            <input placeholder="Seat Count" name="seat_count" type="text" class="validate">                         
+            <p >Seat count</p>
+            <input placeholder="Enter number of seats in aircraft" name="seat_count" type="text" class="validate">                         
         </div><br>
         
         <button class="btn waves-effect waves-light" type="submit" name="Ureg">Register
 
         </button>
     </form>
+</div>
 </div>

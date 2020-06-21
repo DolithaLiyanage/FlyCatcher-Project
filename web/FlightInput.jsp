@@ -20,7 +20,7 @@
     }
    
     p{
-        background-color: #ddf3f5;
+        background-color: #a6dcef;
         margin-bottom:-5px;
         display: inline-block;
         padding: 0.7% 10% 0.7% 10%;
@@ -30,21 +30,23 @@
     }
 
     .col:hover p{
-         
-        background-color: #a6dcef;
+         color:white;
+        background-color: #111d5e;
         transform: scale(1.1);
         
         box-shadow: 2px 3px 2px  rgba(0, 0, 0, 0.3);
         border-radius: 3px 3px 3px 3px;
     }
     .maker:hover p{
-         background-color: #a6dcef;
+         color:white;
+        background-color: #111d5e;
         transform: scale(1.1);
         border-radius: 3px 3px 3px 3px;
         box-shadow: 2px 3px 2px  rgba(0, 0, 0, 0.3);
     }
     .fly:hover p{
-         background-color: #a6dcef;
+         color:white;
+        background-color: #111d5e;
         transform: scale(1.1);
         border-radius: 3px 3px 3px 3px;
         box-shadow: 2px 3px 2px  rgba(0, 0, 0, 0.3);

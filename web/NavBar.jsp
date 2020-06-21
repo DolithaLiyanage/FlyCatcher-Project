@@ -21,7 +21,7 @@
         <div class="navbar-fixed">
         <nav style="background-color: #44378D">
             <div class="container nav-wrapper" style = "width:100%">
-                <a href="index.jsp" class="brand-logo">Bake a Wish</a>
+                <a href="index.jsp" class="brand-logo">FlyCatcher</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="index.jsp">Home</a></li>
                     <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Login</a></li>

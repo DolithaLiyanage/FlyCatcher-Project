@@ -67,8 +67,8 @@
 
         <div class="row">
             <div class="col l6 s12">
-                <h5 class="white-text" style="padding-bottom:5%">Contact us</h5>
-                <p class="grey-text text-lighten-4">Call us </p>
+                <h5 class="white-text">Contact us</h5>
+                <h4 class="grey-text text-lighten-4">+947 **** **** </h4>
             </div>
             <div class="col l4 offset-l2 s12">
                 <div class="social-menu">
@@ -78,7 +78,7 @@
                         <li><a href=""><i class="fa fa-twitter"></i></a></li>
                         <li><a href=""><i class="fa fa-instagram"></i></a></li>
                         <li><a href=""><i class="fa fa-youtube"></i></a></li>
-                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/DolithaLiyanage/FlyCatcher-Project.git"><i class="fa fa-github"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -87,8 +87,8 @@
     </div>
     <div class="footer-copyright" style="background-color:rgba(0, 0, 0, 0.54);">
         <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-
+            © 2020 Copyright Dolitha Liyanage, Gayan Sayakkara
+            <a class="grey-text text-lighten-4 right" href="https://github.com/DolithaLiyanage/FlyCatcher-Project.git">GitHub Link</a>
+</div></div>
 
             </footer>

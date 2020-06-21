@@ -27,77 +27,138 @@
 
 %>
 
-<div class = "container center" style = "width:30%">
-    <h3>Add aircraft details here</h3>
+<style>
+    body{
+        background-image: url(33.jpg);
+
+        background-position: center;
+    }
+    input{
+        text-align: center;
+
+    }
+    h4{
+        padding: 1%;
+        display: inline-block;
+        background-color: #ffdc6a;
+        padding: 3%;
+        border-radius: 7px 7px 7px 7px;
+        box-shadow: 2px 2px 2px  rgba(1, 0, 0, 0.5);
+
+    }
+   
+    p{
+        background-color: #a6dcef;
+        margin-bottom:-5px;
+        display: inline-block;
+        padding: 0.7% 10% 0.7% 10%;
+         box-shadow: 2px 3px 2px  rgba(0, 0, 0, 0.3);
+        border-radius: 3px 3px 3px 3px;
+        transition: 0.3s;
+    }
+
+    .col:hover p{
+         color:white;
+        background-color: #111d5e;
+        transform: scale(1.1);
+        
+        box-shadow: 2px 3px 2px  rgba(0, 0, 0, 0.3);
+        border-radius: 3px 3px 3px 3px;
+    }
+    .maker:hover p{
+         color:white;
+        background-color: #111d5e;
+        transform: scale(1.1);
+        border-radius: 3px 3px 3px 3px;
+        box-shadow: 2px 3px 2px  rgba(0, 0, 0, 0.3);
+    }
+    .fly:hover p{
+         color:white;
+        background-color: #111d5e;
+        transform: scale(1.1);
+        border-radius: 3px 3px 3px 3px;
+        box-shadow: 2px 3px 2px  rgba(0, 0, 0, 0.3);
+    }
+    .card{
+        border:2.5px solid black;
+    }
+    
+</style>
+<div class = "container center" style = "width:30%;margin-top:1%">
+    <div class="card" style = "height: 800px; overflow: hidden; padding: 0 8% 0 8%">
+
+        <h4>Edit Flight</h4>
 
 
     <form method="POST" action="">
         <% while (rs.next()) {%>
-
+      
         <div style="text-align:center">
             <h5> Flight -<%=rs.getString("flight_no")%></h5> 
 
         </div><br>
-        <div class="container center">
-            <div class="row center">
-                <div class="col s6">
-                    <div class="input-feild" >
+       
+            <div class="row">
+                
+                    <div class="col s6 input-feild" >
+                        <p>Departure Date</p>
                         <input  name="dep_date" value= "<%=rs.getString("dep_date")%>" type="text" class="validate">                         
                     </div>
-                </div>
-                <div class="col s6">
-                    <div class="input-feild">
+              
+                
+                    <div class="col s6 input-feild">
+                        <p>Departure Date</p>
                         <input  value= "<%=rs.getString("dep_time")%>" name="dep_time" type="text" class="validate"/> 
                     </div>
-                </div>
-                <div class="col s6">
+               </div>
+                <div class="container center maker">
                     <div class="input-feild" >
-
+                        <p style="margin-top:-5px;">Departure Airport</p>
                         <input  name="dep_airport" value= "<%=rs.getString("dep_airport")%>" type="text" class="validate">                         
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="container center">
+            
+    
+        
             <div class="row">
-                <div class="col s">
-                    <div class="input-feild">
+                
+                    <div class="col s6 input-feild">
+                        <p>Arrival Date</p>
                         <input  value= "<%=rs.getString("arr_date")%>" name="arr_date" type="text" class="validate"/> 
 
                     </div>
-                </div>
-                <div class="col s5">
-                    <div class="input-feild" >
-
+               
+               
+                    <div class="col s6 input-feild" >
+                        <p>Arrival Time</p>
                         <input  name="arr_time" value= "<%=rs.getString("arr_time")%>" type="text" class="validate">                         
                     </div>
-                </div>
-                <div class="col s5">
+                    </div>
+                <div class="container center maker">
                     <div class="input-feild">
-
+                        <p style="margin-top:-5px;">Arrival Airport</p>
                         <input  value= "<%=rs.getString("arr_airport")%>" name="arr_airport" type="text" class="validate"/> 
 
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="container center">
-            <div class="row">
-                <div class="col s5">
-                    <div class="input-feild">
+            
+        
+       
+            
+               
+                    <div class="input-feild fly">
+                        <p>Aircraft No.</p><br>
                         <input  value= "<%=rs.getString("aircraft_no")%>" name="aircraft_no" type="text" class="validate"/> 
 
                     </div>
-                </div>
-                <div class="col s5">
-                    <div class="input-feild" >
+                
+                
+                    <div class="input-feild fly" >
+                        <p style="margin-top:15px;"> Price per Head</p><br>
 
                         <input  name="price" value= "<%=rs.getString("price")%>" type="text" class="validate">                         
                     </div>
-                </div>
-
-            </div>
-        </div>
+               
 
         <%}%>
 
@@ -106,6 +167,7 @@
         </button>
     </form>
 </div>
+        </div>
 
 <%
         if (flight_no != null && dep_date != null && dep_time != null && dep_airport != null && arr_date != null && arr_time != null && arr_airport != null && aircraft_no != null && price != null) {

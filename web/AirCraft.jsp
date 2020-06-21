@@ -16,9 +16,34 @@
 %>
 
 
+<style>
+    body{
+        background-image: url(34.jpg);
+
+        background-position: left;
+        background-size: cover;
+    }
+    tbody{
+        background: rgba(255, 255, 255, 0.5);
+        font-weight: bold;
+        text-align: center;
 
 
-<div class="container center" style="padding-top:2% ">
+    }
+    th, td{
+        text-align: center;
+    }
+    thead{
+        color: white;
+        background: rgba(0, 0, 0, 0.7);
+
+    }
+
+
+
+</style>
+
+<div class="container center" style="padding-top:2%; width: 40%">
     <table>
         <thead>
             <tr>

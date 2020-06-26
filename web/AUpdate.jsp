@@ -50,7 +50,7 @@
         <% while(rs.next()){ %>
         
         <div class="input-feild">
-            <p>Registration No - <%=rs.getString("reg_no")%></p>
+            <h4>Registration No - <%=rs.getString("reg_no")%></h4>
             
         </div><br>
         <div class="input-feild" >

@@ -75,7 +75,7 @@ public class FDelete extends HttpServlet {
             
             //creating the database
             Connection con = DriverManager.getConnection("jdbc:derby://localhost:1527/Flycatcher_user","app","app");
-            String statement = "delete from FLIGHTS where flight_no= ?";
+            String statement = "delete from FLIGHT where flight_no= ?";
             PreparedStatement ps = con.prepareStatement(statement);
             ps.setString(1, flight_no);
             

@@ -170,13 +170,13 @@
 
    // RequestDispatcher rd =request.getRequestDispatcher("FlightBooking.jsp");
                 //   rd.include(request, response);
-                out.println("<div class=\"container center\">"
+                out.println("<div class=\"container center\" style=\"color:white\">"
                         + "seats exceeded"
                         + "</div>");
                 break;
             } 
             else if(c<=0){
-            out.println("<div class=\"container center\">"
+            out.println("<div class=\"container center\" style=\"color:white\">"
                         + "invalid input"
                         + "</div>");
             

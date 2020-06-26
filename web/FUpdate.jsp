@@ -102,13 +102,13 @@
                 
                     <div class="col s6 input-feild" >
                         <p>Departure Date</p>
-                        <input  name="dep_date" value= "<%=rs.getString("dep_date")%>" type="text" class="validate">                         
+                        <input  name="dep_date" value= "<%=rs.getString("dep_date")%>" type="text" class="datepicker"id="datepicker1" required>                         
                     </div>
               
                 
                     <div class="col s6 input-feild">
                         <p>Departure Date</p>
-                        <input  value= "<%=rs.getString("dep_time")%>" name="dep_time" type="text" class="validate"/> 
+                        <input  value= "<%=rs.getString("dep_time")%>" name="dep_time" type="text" class="validate" required/> 
                     </div>
                </div>
                 <div class="container center maker">
@@ -124,20 +124,20 @@
                 
                     <div class="col s6 input-feild">
                         <p>Arrival Date</p>
-                        <input  value= "<%=rs.getString("arr_date")%>" name="arr_date" type="text" class="validate"/> 
+                        <input  value= "<%=rs.getString("arr_date")%>" name="arr_date" type="text" class="datepicker" id="datepicker2" required/> 
 
                     </div>
                
                
                     <div class="col s6 input-feild" >
                         <p>Arrival Time</p>
-                        <input  name="arr_time" value= "<%=rs.getString("arr_time")%>" type="text" class="validate">                         
+                        <input  name="arr_time" value= "<%=rs.getString("arr_time")%>" type="text" class="validate" required>                         
                     </div>
                     </div>
                 <div class="container center maker">
                     <div class="input-feild">
                         <p style="margin-top:-5px;">Arrival Airport</p>
-                        <input  value= "<%=rs.getString("arr_airport")%>" name="arr_airport" type="text" class="validate"/> 
+                        <input  value= "<%=rs.getString("arr_airport")%>" name="arr_airport" type="text" class="validate" required/> 
 
                     </div>
                 </div>
@@ -148,7 +148,7 @@
                
                     <div class="input-feild fly">
                         <p>Aircraft No.</p><br>
-                        <input  value= "<%=rs.getString("aircraft_no")%>" name="aircraft_no" type="text" class="validate"/> 
+                        <input  value= "<%=rs.getString("aircraft_no")%>" name="aircraft_no" type="text" class="validate" required/> 
 
                     </div>
                 
@@ -156,7 +156,7 @@
                     <div class="input-feild fly" >
                         <p style="margin-top:15px;"> Price per Head</p><br>
 
-                        <input  name="price" value= "<%=rs.getString("price")%>" type="text" class="validate">                         
+                        <input  name="price" value= "<%=rs.getString("price")%>" type="text" class="validate" required>                         
                     </div>
                
 
@@ -171,7 +171,7 @@
 
 <%
         if (flight_no != null && dep_date != null && dep_time != null && dep_airport != null && arr_date != null && arr_time != null && arr_airport != null && aircraft_no != null && price != null) {
-            String query = "update FLIGHTS set dep_date=?, dep_time=?, dep_airport=?, arr_date=?, arr_time=?, arr_airport=?, aircraft_no=?, price=?, seat_count=(SELECT seat_count FROM AIRCRAFT  where reg_no = ?) where flight_no=?";
+            String query = "update FLIGHT set dep_date=?, dep_time=?, dep_airport=?, arr_date=?, arr_time=?, arr_airport=?, aircraft_no=?, price=?, seat_count=(SELECT seat_count FROM AIRCRAFT  where reg_no = ?) where flight_no=?";
             PreparedStatement pc = con.prepareStatement(query);
 
             pc.setString(1, dep_date);
@@ -195,7 +195,7 @@
                 RequestDispatcher rc = request.getRequestDispatcher("Flights.jsp");
                 rc.include(request, response);
                 out.println("<div class=\"container center\">"
-                        + "Deletion Failed"
+                        + "Update Failed"
                         + "</div>");
             }
         }
@@ -203,7 +203,15 @@
     } catch (Exception e) {
 
         e.printStackTrace();
-        out.println("wrong");
+        out.println("<div class=\"container center\">"
+                        + "Aircraft Doesn't exist"
+                        + "</div>");
 
     }
 %>
+<script>
+    $(function () {
+        $("#datepicker1, #datepicker2").datepicker({format: 'yyyy-mm-dd'});
+    });
+
+</script>

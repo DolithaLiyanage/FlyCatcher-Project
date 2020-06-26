@@ -86,7 +86,7 @@ public class AircraftServlet extends HttpServlet {
         if (isExisting) {
             RequestDispatcher rs = request.getRequestDispatcher("AircraftInput.jsp");
             rs.include(request, response);
-            out.println("<div class=\"container center\">"
+            out.println("<div class=\"container center\" style=\"color:white\">"
                     + "Aircraft already exist"
                     + "</div>");
         } else {

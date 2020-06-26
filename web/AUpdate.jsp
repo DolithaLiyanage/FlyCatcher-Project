@@ -50,9 +50,8 @@
         <% while(rs.next()){ %>
         
         <div class="input-feild">
-            <p>Registration No.</p>
-            <input  value= "<%=rs.getString("reg_no")%>" name="reg_no" type="text" class="validate"/> 
-
+            <p>Registration No - <%=rs.getString("reg_no")%></p>
+            
         </div><br>
         <div class="input-feild" >
                         <p>Seat Count</p>

@@ -88,7 +88,7 @@ public class UserServlet extends HttpServlet {
             {
                 RequestDispatcher rs =request.getRequestDispatcher("UserLogin.jsp");
                 rs.include(request, response);
-                out.println("<div class=\"container center\">"
+                out.println("<div class=\"container center\" style=\"color:white\">"
                         + "Invalid email or password"
                         + "</div>");
                 

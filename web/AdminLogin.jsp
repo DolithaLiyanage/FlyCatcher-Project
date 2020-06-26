@@ -23,12 +23,12 @@
     <form method="POST" action="NewServlet1">
         <div class="input-feild">
             <i class="material-icons prefix">person</i>
-            <input placeholder="Email" name="admin_email" type="text" class="validate"> 
+            <input placeholder="Email" name="admin_email" type="text" class="validate" required> 
 
         </div><br>
         <div class="input-feild" >
             <i class="material-icons prefix">lock</i>
-            <input placeholder="Password" name="admin_password" type="text" class="validate">                         
+            <input placeholder="Password" name="admin_password" type="text" class="validate" required>                         
         </div><br>
         <button class="btn waves-effect waves-light" type="submit" name="ALogin">Login
 
